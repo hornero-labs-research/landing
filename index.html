@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hornero Labs — Consultora de teledetección y machine learning</title>
+  <meta name="description" content="Hornero Labs: consultora especializada en ciencias ambientales, teledetección y machine learning. Construimos soluciones a través de la observación de la Tierra." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav container">
+      <a class="nav__logo" href="#inicio">
+        <img src="assets/favicon.png" alt="" width="32" height="32" />
+        <span>Hornero <b>Labs</b></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#desarrollo">Desarrollo propio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow">Teledetección &nbsp;·&nbsp; Machine learning &nbsp;·&nbsp; Ciencias ambientales</p>
+          <h1>Construimos soluciones a través de la <em>observación de la Tierra</em></h1>
+          <p class="hero__lead">
+            Consultora de ciencias ambientales y machine learning.
+            Convertimos datos satelitales en herramientas concretas para
+            anticipar y gestionar inundaciones.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--navy">Conversemos</a>
+            <a href="#servicios" class="btn btn--link">Qué hacemos</a>
+          </div>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <img src="assets/nest.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <p class="eyebrow">Qué hacemos</p>
+        <h2 class="section__title">Del dato satelital a la <em>decisión</em></h2>
+
+        <div class="servicios">
+          <article class="servicio">
+            <p class="servicio__num">01</p>
+            <div>
+              <h3>Teledetección aplicada</h3>
+              <p>
+                Procesamiento de imágenes Sentinel-1/2, Landsat y reanálisis
+                climáticos para detectar agua, inundaciones y cambios en el territorio.
+              </p>
+            </div>
+          </article>
+          <article class="servicio">
+            <p class="servicio__num">02</p>
+            <div>
+              <h3>Machine learning geoespacial</h3>
+              <p>
+                Modelos predictivos sobre series temporales satelitales,
+                validados contra eventos históricos documentados.
+              </p>
+            </div>
+          </article>
+          <article class="servicio">
+            <p class="servicio__num">03</p>
+            <div>
+              <h3>Gestión de riesgo de inundaciones</h3>
+              <p>
+                Sistemas de alerta temprana por subcuenca, integrados con
+                redes hidrométricas oficiales.
+              </p>
+            </div>
+          </article>
+          <article class="servicio">
+            <p class="servicio__num">04</p>
+            <div>
+              <h3>Plataformas operativas</h3>
+              <p>
+                Tableros web con mapas interactivos y reportes automatizados
+                para equipos de emergencias y planificación.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESARROLLO PROPIO -->
+    <section class="section section--navy" id="desarrollo">
+      <div class="container producto">
+        <div class="producto__text">
+          <p class="eyebrow eyebrow--light">Desarrollo propio</p>
+          <h2 class="section__title">Sistema de alerta temprana de <em>inundaciones</em></h2>
+          <p class="producto__lead">
+            Monitoreo continuo de cuencas con alertas por zona en un semáforo
+            de tres niveles. En piloto operativo en la
+            <strong>cuenca del Río Luján, Escobar</strong>, validado contra
+            más de 20 eventos documentados.
+          </p>
+          <ul class="checklist">
+            <li>Caudal modelado vs. umbrales de excedencia — GloFAS / Copernicus</li>
+            <li>Lluvia observada y pronosticada — CHIRPS, GEFS, AIFS</li>
+            <li>Inundación observada por radar — Sentinel-1 / GFM</li>
+            <li>Niveles oficiales del INA y detección de sudestada</li>
+            <li>Backtesting contra catálogo histórico de eventos</li>
+          </ul>
+          <a href="#contacto" class="btn btn--sand">Solicitar una demostración</a>
+        </div>
+
+        <div class="producto__panel" aria-hidden="true">
+          <div class="panel">
+            <p class="panel__title">Alertas por subcuenca — hoy</p>
+            <div class="panel__rows">
+              <div class="prow"><span>Luján alto</span><span class="badge badge--baja">Baja</span></div>
+              <div class="prow"><span>Luján medio</span><span class="badge badge--media">Media</span></div>
+              <div class="prow"><span>Luján bajo</span><span class="badge badge--alta">Alta</span></div>
+              <div class="prow"><span>Reconquista</span><span class="badge badge--baja">Baja</span></div>
+              <div class="prow"><span>Arrecifes</span><span class="badge badge--baja">Baja</span></div>
+            </div>
+            <div class="panel__bars">
+              <div class="bar" style="--h:34%"></div>
+              <div class="bar" style="--h:52%"></div>
+              <div class="bar" style="--h:46%"></div>
+              <div class="bar" style="--h:70%"></div>
+              <div class="bar bar--alta" style="--h:92%"></div>
+              <div class="bar" style="--h:58%"></div>
+              <div class="bar" style="--h:40%"></div>
+            </div>
+            <p class="panel__caption">Probabilidad de excedencia de caudal — próximos 5 días</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container contacto">
+        <div class="contacto__info">
+          <p class="eyebrow">Contacto</p>
+          <h2 class="section__title">Contanos<br />tu <em>desafío</em></h2>
+          <p class="section__lead">
+            ¿Necesitás monitorear una cuenca, evaluar riesgo de inundación o
+            desarrollar una solución de teledetección a medida? Escribinos.
+          </p>
+          <p class="contacto__mail">
+            <a href="mailto:info@hornerolabs.com">info@hornerolabs.com</a>
+          </p>
+        </div>
+
+        <form class="form" action="https://formsubmit.co/info@hornerolabs.com" method="POST">
+          <input type="hidden" name="_subject" value="Contacto desde hornerolabs.com" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" class="form__honey" tabindex="-1" autocomplete="off" />
+
+          <div class="form__group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+          </div>
+          <div class="form__group">
+            <label for="organizacion">Organización <span class="opcional">(opcional)</span></label>
+            <input type="text" id="organizacion" name="organizacion" placeholder="Empresa, municipio, organismo" />
+          </div>
+          <div class="form__group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Contanos brevemente qué necesitás"></textarea>
+          </div>
+          <button type="submit" class="btn btn--navy btn--full">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Hornero Labs — Inteligencia ambiental basada en datos satelitales.</p>
+      <a href="mailto:info@hornerolabs.com">info@hornerolabs.com</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
