@@ -192,6 +192,29 @@ em { font-style: italic; color: var(--brown); }
 .servicio h3 { font-size: 1.28rem; margin-bottom: 0.5rem; }
 .servicio p:not(.servicio__num) { color: var(--muted); font-size: 0.96rem; max-width: 56ch; }
 
+/* ===== Quiénes somos ===== */
+.section--alt { background: var(--surface); border-block: 1px solid var(--line); }
+.equipo {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.perfil {
+  background: var(--bg);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 30px 28px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.perfil:hover {
+  border-color: rgba(124, 90, 52, 0.4);
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+.perfil__rol {
+  font-family: var(--display); font-weight: 600;
+  font-size: 1.15rem; color: var(--navy); margin-bottom: 12px;
+  display: inline-block; border-bottom: 2px solid var(--sand); padding-bottom: 6px;
+}
+.perfil__desc { color: var(--muted); font-size: 0.96rem; }
+
 /* ===== Contacto ===== */
 .contacto { display: grid; grid-template-columns: 1fr 1.05fr; gap: 72px; align-items: start; }
 .contacto__mail { margin-top: 2.2rem; }
@@ -266,6 +289,7 @@ em { font-style: italic; color: var(--brown); }
   .hero__grid { grid-template-columns: 1fr; gap: 48px; }
   .hero__art { max-width: 460px; margin: 0 auto; }
   .contacto { grid-template-columns: 1fr; gap: 48px; }
+  .equipo { grid-template-columns: 1fr; }
   .section { padding: 72px 0; }
 }
 @media (max-width: 720px) {
