@@ -230,6 +230,12 @@ em { font-style: italic; color: var(--brown); }
   padding: 13px 18px 15px;
   font-size: 0.9rem; color: var(--muted);
 }
+.proyecto-titulo {
+  display: block;
+  font-family: var(--display); font-weight: 600;
+  font-size: 1.08rem; color: var(--navy);
+  margin-bottom: 3px;
+}
 .carousel__btn {
   position: absolute; top: 40%; z-index: 5;
   width: 44px; height: 44px; border-radius: 50%;
