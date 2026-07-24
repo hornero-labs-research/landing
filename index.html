@@ -27,6 +27,7 @@
 
       <ul class="nav__links">
         <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#trabajos">Trabajos</a></li>
         <li><a href="#equipo">Quiénes somos</a></li>
         <li><a href="#contacto" class="nav__cta">Contacto</a></li>
       </ul>
@@ -37,6 +38,7 @@
         </summary>
         <ul class="nav__dropdown">
           <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#trabajos">Trabajos</a></li>
           <li><a href="#equipo">Quiénes somos</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -115,6 +117,198 @@
               para equipos de emergencias y planificación.
             </p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRABAJOS REALIZADOS -->
+    <section class="section" id="trabajos">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Trabajos realizados</p>
+          <h2 class="section__title">Casos <em>en producción</em></h2>
+          <p class="section__lead">
+            Casos de punta a punta: desde un sistema operativo de alerta
+            temprana de inundaciones y datasets multi-constelación hasta
+            diagnósticos hídricos para el agro e investigación publicada en
+            super resolución satelital.
+          </p>
+        </header>
+
+        <div class="caso reveal">
+          <div class="caso__head">
+            <h3>Alerta temprana de inundaciones</h3>
+            <p>
+              MVP operativo para la cuenca del Río Luján (partido de Escobar,
+              Buenos Aires): monitoreo satelital, pronóstico hidrometeorológico,
+              niveles oficiales del INA y alertas por subcuenca, de la
+              investigación al tablero.
+            </p>
+          </div>
+          <div class="carousel" data-carousel>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8249;</button>
+            <div class="carousel__track">
+              <figure class="carousel__slide">
+                <img src="assets/portfolio/dash-general.jpg" alt="Tablero de alerta de inundaciones: mapa con subcuencas y panel con niveles oficiales del INA" loading="lazy" />
+                <figcaption>Tablero operativo — situación por subcuenca y niveles oficiales INA</figcaption>
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/portfolio/dash-simulador.jpg" alt="Simulador de escenarios con la cuenca alta en alerta alta" loading="lazy" />
+                <figcaption>Simulador de escenarios — cuenca alta en alerta ALTA</figcaption>
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/portfolio/dash-peligrosidad.jpg" alt="Capa de peligrosidad municipal y popup con detalle de señales por subcuenca" loading="lazy" />
+                <figcaption>Peligrosidad municipal y detalle de señales por subcuenca</figcaption>
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/portfolio/anatomia-evento.png" alt="Anatomía del evento de mayo de 2025: caudal modelado, lluvia observada, pronóstico a 5 días y humedad del suelo" loading="lazy" />
+                <figcaption>Anatomía de un evento — la crecida de mayo 2025 en retrospectiva</figcaption>
+              </figure>
+            </div>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8250;</button>
+          </div>
+        </div>
+
+        <div class="caso reveal">
+          <div class="caso__head">
+            <h3>Generación de datasets multi-constelación</h3>
+            <p>
+              Desarrollamos <strong>AerEO</strong>, una librería modular de
+              descubrimiento y extracción de datos satelitales: descarga,
+              recorte en grillas y exportación de parches listos para
+              entrenar modelos, desde Sentinel-2 hasta GOES-19.
+            </p>
+            <p>
+              El mismo flujo sirve para cualquier constelación y cualquier
+              región: definís el área y la grilla, y AerEO resuelve búsqueda,
+              descarga, reproyección y apilado temporal. El resultado son
+              datasets multiconstelación consistentes — óptico, térmico,
+              embeddings precomputados — listos para alimentar pipelines de
+              machine learning sin trabajo manual de preparación.
+            </p>
+          </div>
+          <div class="carousel" data-carousel>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8249;</button>
+            <div class="carousel__track">
+              <figure class="carousel__slide carousel__slide--contain">
+                <img src="assets/portfolio/aereo-sentinel2-ndvi.jpg" alt="Parches de NDVI de Sentinel-2 sobre el embalse El Chocón con grilla de extracción" loading="lazy" />
+                <figcaption>Sentinel-2 — NDVI sobre el embalse El Chocón, grilla de extracción</figcaption>
+              </figure>
+              <figure class="carousel__slide carousel__slide--contain">
+                <img src="assets/portfolio/aereo-multi-lst.jpg" alt="Temperatura de superficie de VIIRS con la grilla de parches extraídos" loading="lazy" />
+                <figcaption>VIIRS — temperatura de superficie en Córdoba, grilla de parches</figcaption>
+              </figure>
+              <figure class="carousel__slide carousel__slide--contain">
+                <img src="assets/portfolio/aereo-tessera.jpg" alt="Embeddings satelitales GeoTessera visualizados en falso color" loading="lazy" />
+                <figcaption>GeoTessera — embeddings satelitales sobre Oxford, listos para ML</figcaption>
+              </figure>
+            </div>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8250;</button>
+          </div>
+        </div>
+        <div class="caso reveal">
+          <div class="caso__head">
+            <h3>Reportes de campo por WhatsApp</h3>
+            <p>
+              Una app que centraliza la comunicación de los equipos en
+              territorio: brigadistas, guardaparques y cuadrillas reportan
+              incidentes por WhatsApp — texto, audio o foto — sin instalar
+              nada nuevo.
+            </p>
+            <p>
+              Cada mensaje se estructura automáticamente con IA: tipo de
+              incidente, ubicación, prioridad y asignación. El reporte cae
+              geolocalizado en un mapa operativo y en una planilla de
+              seguimiento, en tiempo real, listo para coordinar la respuesta.
+            </p>
+          </div>
+          <div class="carousel" data-carousel>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8249;</button>
+            <div class="carousel__track">
+              <figure class="carousel__slide carousel__slide--contain">
+                <img src="assets/portfolio/campo-chat.png" alt="Chat de WhatsApp donde un brigadista reporta un foco de incendio y la app responde con el incidente registrado, ubicación y prioridad" loading="lazy" />
+                <figcaption>Del audio o texto de WhatsApp al registro estructurado, sin apps nuevas</figcaption>
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/portfolio/campo-mapa.jpg" alt="Mapa con incidentes geolocalizados por tipo: incendios, anegamientos y otros reportes de campo" loading="lazy" />
+                <figcaption>Cada reporte aparece geolocalizado en el mapa operativo</figcaption>
+              </figure>
+              <figure class="carousel__slide">
+                <img src="assets/portfolio/campo-planilla.png" alt="Planilla de seguimiento con los incidentes registrados: tipo, ubicación, coordenadas, prioridad y estado" loading="lazy" />
+                <figcaption>Y queda en la planilla de seguimiento, listo para coordinar</figcaption>
+              </figure>
+            </div>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8250;</button>
+          </div>
+        </div>
+        <div class="caso reveal">
+          <div class="caso__head">
+            <h3>Diagnóstico hídrico para tasación rural</h3>
+            <p>
+              Para la tasación de una estancia en la provincia de Santa Fe
+              analizamos su comportamiento hídrico con imágenes Landsat 8:
+              seleccionamos los escenarios extremos de precipitación a partir
+              del registro histórico y medimos el área anegada con el índice
+              espectral NDWI.
+            </p>
+            <p>
+              El resultado: la superficie inundada del establecimiento oscila
+              entre el 12% y el 43% del total, con una zona elevada de alto
+              potencial agrícola-forestal libre de anegamiento. Un insumo
+              objetivo y cuantificado para valorar el campo.
+            </p>
+          </div>
+          <div class="carousel" data-carousel>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8249;</button>
+            <div class="carousel__track">
+              <figure class="carousel__slide carousel__slide--contain">
+                <img src="assets/portfolio/logros-anegamiento.jpg" alt="Mapa del establecimiento con la extensión máxima y mínima histórica del anegamiento" loading="lazy" />
+                <figcaption>Extensión del anegamiento: del 12% (seca 2016) al 43% (húmeda 2013)</figcaption>
+              </figure>
+              <figure class="carousel__slide carousel__slide--contain">
+                <img src="assets/portfolio/logros-ndwi.jpg" alt="Secuencia de imágenes Landsat 8 en color verdadero e índice NDWI para situación seca y húmeda" loading="lazy" />
+                <figcaption>Secuencia Landsat 8 + NDWI — situación seca vs. húmeda</figcaption>
+              </figure>
+              <figure class="carousel__slide carousel__slide--contain">
+                <img src="assets/portfolio/logros-climograma.jpg" alt="Climograma de San Justo, Santa Fe, con precipitación media anual de 962 mm" loading="lazy" />
+                <figcaption>Climograma de San Justo (Santa Fe) — base para elegir las fechas extremas</figcaption>
+              </figure>
+            </div>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8250;</button>
+          </div>
+        </div>
+
+        <div class="caso reveal">
+          <div class="caso__head">
+            <h3>Super resolución satelital multi-frame</h3>
+            <p>
+              Investigación propia publicada en
+              <a href="https://www.mdpi.com/2072-4292/12/22/3812" target="_blank" rel="noopener">Remote&nbsp;Sensing&nbsp;(MDPI)</a>:
+              3DWDSRnet combina varias pasadas de 300&nbsp;m del satélite
+              PROBA-V de la ESA en una sola imagen de 100&nbsp;m, usando una
+              red convolucional 3D con bloques de activación ancha.
+            </p>
+            <p>
+              El modelo ganó el Kelvins PROBA-V Challenge de la ESA entrenado
+              en una notebook común, con menos frames y menos memoria que los
+              equipos competidores — IA de frontera sin infraestructura
+              costosa.
+            </p>
+          </div>
+          <div class="carousel" data-carousel>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Anterior">&#8249;</button>
+            <div class="carousel__track">
+              <figure class="carousel__slide carousel__slide--contain">
+                <img src="assets/portfolio/sr-graphabs.jpg" alt="Esquema del modelo: varios cuadros de baja resolución entran a la red 3DWDSRNet y producen una predicción en alta resolución" loading="lazy" />
+                <figcaption>De varios cuadros de 300 m a una imagen de 100 m (PROBA-V, ESA)</figcaption>
+              </figure>
+              <figure class="carousel__slide carousel__slide--contain">
+                <img src="assets/portfolio/sr-arquitectura.jpg" alt="Arquitectura de la red: cuadros de baja resolución, capas convolucionales 3D, pixel shuffle y frame de alta resolución" loading="lazy" />
+                <figcaption>Arquitectura 3DWDSRnet — publicada en Remote Sensing (2020)</figcaption>
+              </figure>
+            </div>
+            <button class="carousel__btn carousel__btn--next" aria-label="Siguiente">&#8250;</button>
+          </div>
         </div>
       </div>
     </section>
@@ -247,6 +441,41 @@
         a.addEventListener('click', () => menu.removeAttribute('open'))
       );
     }
+
+    // Carousels de trabajos: flechas + avance automático
+    document.querySelectorAll('[data-carousel]').forEach(car => {
+      const track = car.querySelector('.carousel__track');
+      const step = () => {
+        const slide = track.querySelector('.carousel__slide');
+        return slide ? slide.offsetWidth + 18 : track.clientWidth;
+      };
+      const atEnd = () => track.scrollLeft + track.clientWidth >= track.scrollWidth - 8;
+      const next = () => track.scrollTo({
+        left: atEnd() ? 0 : track.scrollLeft + step(),
+        behavior: 'smooth',
+      });
+      const prev = () => track.scrollTo({
+        left: track.scrollLeft <= 8 ? track.scrollWidth : track.scrollLeft - step(),
+        behavior: 'smooth',
+      });
+      car.querySelector('.carousel__btn--next').addEventListener('click', next);
+      car.querySelector('.carousel__btn--prev').addEventListener('click', prev);
+
+      if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+        let timer = setInterval(next, 4500);
+        const pause = () => { clearInterval(timer); timer = null; };
+        const resume = () => { if (!timer) timer = setInterval(next, 4500); };
+        ['pointerenter', 'focusin', 'touchstart'].forEach(ev =>
+          car.addEventListener(ev, pause, { passive: true }));
+        ['pointerleave', 'focusout'].forEach(ev =>
+          car.addEventListener(ev, resume));
+        // Al scrollear manual, reinicia el temporizador
+        track.addEventListener('scroll', () => {
+          pause(); clearTimeout(track._resumeT);
+          track._resumeT = setTimeout(resume, 6000);
+        }, { passive: true });
+      }
+    });
 
     // Aparición suave al hacer scroll (respeta prefers-reduced-motion)
     if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {

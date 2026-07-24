@@ -192,6 +192,56 @@ em { font-style: italic; color: var(--brown); }
 .servicio h3 { font-size: 1.28rem; margin-bottom: 0.5rem; }
 .servicio p:not(.servicio__num) { color: var(--muted); font-size: 0.96rem; max-width: 56ch; }
 
+/* ===== Trabajos realizados (carousels) ===== */
+.caso { margin-bottom: 3.5rem; }
+.caso:last-child { margin-bottom: 0; }
+.caso__head { max-width: 720px; margin-bottom: 1.6rem; }
+.caso__head h3 { font-size: 1.45rem; margin-bottom: 0.5rem; }
+.caso__head p { color: var(--muted); font-size: 1rem; }
+.caso__head strong { color: var(--ink); font-weight: 600; }
+
+.carousel { position: relative; }
+.carousel__track {
+  display: flex; gap: 18px;
+  overflow-x: auto; scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 4px 2px;
+}
+.carousel__track::-webkit-scrollbar { display: none; }
+.carousel__slide {
+  flex: 0 0 min(78%, 660px);
+  scroll-snap-align: center;
+  background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  overflow: hidden;
+}
+.carousel__slide img {
+  display: block; width: 100%;
+  height: clamp(240px, 38vw, 400px);
+  object-fit: cover; object-position: top;
+  border-bottom: 1px solid var(--line);
+}
+/* Figuras altas (notebooks): se muestran completas */
+.carousel__slide--contain img {
+  object-fit: contain;
+  background: var(--surface);
+}
+.carousel__slide figcaption {
+  padding: 13px 18px 15px;
+  font-size: 0.9rem; color: var(--muted);
+}
+.carousel__btn {
+  position: absolute; top: 40%; z-index: 5;
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid var(--line); background: var(--surface);
+  color: var(--navy); font-size: 1.6rem; line-height: 1;
+  cursor: pointer; box-shadow: var(--shadow);
+  transition: background 0.2s, color 0.2s;
+}
+.carousel__btn:hover { background: var(--navy); color: #fff; }
+.carousel__btn--prev { left: -6px; }
+.carousel__btn--next { right: -6px; }
+
 /* ===== Quiénes somos ===== */
 .section--alt { background: var(--surface); border-block: 1px solid var(--line); }
 .equipo {
